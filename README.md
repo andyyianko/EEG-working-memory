@@ -6,6 +6,9 @@ Demo video link：https://drive.google.com/file/d/1LdEuGH4EmAC9JFdJz_MTq0FhD6Vym
 
 本專案主要目的為使用 OpenNeuro working memory EEG 資料，透過 NeuroPype Pipeline Designer 進行 EEG 頻段特徵擷取，並進一步計算不同記憶負荷條件下的 workload 指標，最後使用 Python 進行視覺化比較與分析。
 
+## 專案資料夾與檔案說明
+
+```text
 EEG-working-memory/
 │
 ├── README.md
@@ -19,6 +22,7 @@ EEG-working-memory/
 ├── Fz_theta&Pz_alpha data/
 ├── workload/
 └── comparison python code/
+```
 
 ### 1. `hip_final_project`
 
@@ -166,6 +170,7 @@ Pz alpha
 
 本專案的完整處理流程如下：
 
+```text
 raw data
    ↓
 data convert matlab code
@@ -183,6 +188,7 @@ workload
 comparison python code
    ↓
 workload comparison result
+```
 
 簡要說明如下：
 
@@ -227,9 +233,10 @@ workload comparison result
 進入：data convert matlab code/
 
 依序執行：
+```text
 convert.m
 fix_np_set_format.m
-
+```
 完成後會得到可供 NeuroPype pipeline 使用的 `.set` 檔案。
 
 ---
@@ -262,7 +269,7 @@ fix_np_set_format.m
 
 ### Step 6：計算 workload
 
-使用下列公式計算 workload：Workload = Fz theta / Pz alpha
+使用下列公式計算 Workload = Fz theta / Pz alpha
 
 計算後的結果放入：workload/
 
