@@ -2,6 +2,8 @@
 
 Demo video link：https://drive.google.com/file/d/1LdEuGH4EmAC9JFdJz_MTq0FhD6Vym0bD/view?usp=sharing
 
+![pipeline graph](pipeline graph/pipeline_graph.png)
+
 ## 專案資料夾與檔案說明
 
 本專案主要目的為使用 OpenNeuro working memory EEG 資料，透過 NeuroPype Pipeline Designer 進行 EEG 頻段特徵擷取，並進一步計算不同記憶負荷條件下的 workload 指標，最後使用 Python 進行視覺化比較與分析。
@@ -21,7 +23,8 @@ EEG-working-memory/
 ├── Fz&Pz band data/
 ├── Fz_theta&Pz_alpha data/
 ├── workload/
-└── comparison python code/
+├── comparison python code/
+└── pipeline graph/
 ```
 
 ### 1. `hip_final_project`
@@ -235,6 +238,7 @@ workload comparison result
 依序執行：
 ```text
 convert.m
+   ↓
 fix_np_set_format.m
 ```
 完成後會得到可供 NeuroPype pipeline 使用的 `.set` 檔案。
