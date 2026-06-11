@@ -2,7 +2,7 @@
 
 Demo video link：https://drive.google.com/file/d/1LdEuGH4EmAC9JFdJz_MTq0FhD6Vym0bD/view?usp=sharing
 
-![pipeline graph](pipeline graph/pipeline_graph.png)
+![pipeline graph](pipeline_graph/pipeline_graph.png)
 
 ## 專案資料夾與檔案說明
 
